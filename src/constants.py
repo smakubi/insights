@@ -3,10 +3,10 @@ import os
 
 load_dotenv()
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME")
-USER = os.getenv("USER")
-PASSWORD = os.getenv("PASSWORD")
-HOST = os.getenv("HOST")
-DATABASE = os.getenv("DATABASE")
-PORT = int(os.getenv("PORT"))
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-K1N4XBkXXJuMNX_V9ee0XM5uj9l-G4N1OZW7N-oN_iT3BlbkFJO-4kHPMH2DkvXWATsKrT-GVD5igRv91JeQ2NzdPisA")
+LLM_MODEL_NAME = os.getenv("LLM_MODEL_NAME", "gpt-4-0125-preview")
+USER = os.getenv("USER", "root")
+PASSWORD = os.getenv("PASSWORD", "MamaGrentina$100!")
+HOST = os.getenv("HOST", "localhost")
+DATABASE = os.getenv("DATABASE", "ecommerce")
+PORT = int(os.getenv("PORT", 3306))
